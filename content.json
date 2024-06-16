@@ -1,0 +1,90 @@
+{
+    "logo": {
+      "url": "/images/logo.svg",
+      "alt": "Logo"
+    },
+
+    "hero": {
+      "url": "/images/hero.jpg",
+      "alt": "Hero Image"
+    },
+
+    "about": {
+      "label": "About",
+      "title": "Why Clash Ultra?",
+      "subtitle": "Learn about Clash Ultra and what makes us awesome",
+      "text": "Clash Ultra is a thrilling strategy game that takes the excitement of classic base-building and battles to new heights. In this immersive game, you will construct and upgrade your own village, train a powerful army, and lead your troops to victory against players from around the world. Engage in epic battles, form alliances, and devise strategic plans to outsmart your enemies. With stunning graphics, dynamic gameplay, and a variety of unique units and heroes, Clash Ultra offers endless hours of competitive fun. Join the clash, dominate the battlefield, and become the ultimate ruler in Clash Ultra."
+    },
+
+    "trailer": {
+        "url":"https://youtu.be/cYDm_pod2vM?si=XBLUDxEkqmsxCFrD"
+    },
+
+    "images": [
+      {
+        "id": 1,
+        "url": "/images/gallery1.jpg",
+        "alt": "Gallery Image 1"
+      },
+
+      {
+        "id": 2,
+        "url": "/images/gallery2.jpg",
+        "alt": "Gallery Image 2"
+      },
+
+      {
+        "id": 3,
+        "url": "/images/gallery2.jpg",
+        "alt": "Gallery Image 2"
+      },
+
+      {
+        "id": 4,
+        "url": "/images/gallery2.jpg",
+        "alt": "Gallery Image 2"
+      },
+
+      {
+        "id": 5,
+        "url": "/images/gallery2.jpg",
+        "alt": "Gallery Image 2"
+      },
+      
+      {
+        "id": 6,
+        "url": "/images/gallery2.jpg",
+        "alt": "Gallery Image 2"
+      }
+    ],
+    "bannerImages": [
+      {
+        "id": 1,
+        "url": "/assets/microsoft.svg",
+        "alt": "Gallery Image 1",
+        "link": "https://microsoft.com"
+      },
+
+      {
+        "id": 2,
+        "url": "/assets/applestore.svg",
+        "alt": "Gallery Image 2",
+        "link": "https://apple.com"
+      },
+
+      {
+        "id": 3,
+        "url": "/assets/googlestore.svg",
+        "alt": "Gallery Image 3",
+        "link": "https://play.google.com"
+      },
+
+      {
+        "id": 4,
+        "url": "/assets/amazonstore.svg",
+        "alt": "Gallery Image 2",
+        "link": "https://amazon.com"
+      }
+    ]
+  }
+  
