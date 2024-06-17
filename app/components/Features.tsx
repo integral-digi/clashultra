@@ -1,0 +1,63 @@
+"use client"
+import Image from "next/image";
+import { useContent } from "../context/ContentContext";
+import { labelStyle, titleStyle } from "./About";
+
+const Features: React.FC = () => {
+    const content = useContent();
+
+    if (!content || !content.features) {
+        return <p>Loading...</p>;
+    }
+
+    const { features } = content;
+
+    return (
+    <section className="w-full flex flex-col items-center justify-center py-8 space-y-20">
+        <section className="space-y-3 w-1/2 flex flex-col items-center justify-center">
+            <section className="flex items-center space-x-2 mb-8">
+                <section className="rounded-full border-2 border-blue-950 w-4 h-4" />
+                <h6 className={labelStyle}>
+                    {features.label}
+                </h6>
+            </section>
+            <h2 className={titleStyle}>
+                {features.title}
+            </h2>
+        </section>
+        <section className="flex flex-wrap items-center space-x-12 gap-4 justify-center">
+            {features.card.map((item: any) => (
+                <section
+                    key={item.id}
+                    className={`w-1/4 h-full rounded-2xl py-8 pl-8 pr-4 ${
+                    item.id === 1
+                        ? "bg-yellow-50 text-black/80"
+                        : item.id === 2
+                        ? "bg-blue-950 text-white"
+                        : "bg-blue-50 text-black/80"
+                    }`}
+                >
+                    <section className="space-y-8">
+                        <section className="space-y-2 w-full">
+                            <h3 className="text-3xl font-bold">{item.title}</h3>
+                            <p className="text-xl font-normal">{item.subtitle}</p>
+                        </section>
+                        <section className="float-right">
+                            <Image
+                            src={item.illustration}
+                            width={250}
+                            height={250}
+                            layout="responsive"
+                            objectFit="contain"
+                            alt={item.alt}
+                            />
+                        </section>
+                    </section>
+                </section>
+            ))}
+        </section>
+    </section>
+  );
+};
+
+export default Features;

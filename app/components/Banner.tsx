@@ -1,34 +1,36 @@
 //this component renders the app banners
+
 "use client"
 import Image from "next/image";
 import { useContent } from "../context/ContentContext";
 import Link from "next/link";
 
 const Banner: React.FC = () => {
-    const content = useContent();
+  const content = useContent();
 
-    if(!content) {
-        return <p></p>
-    }
+  // Show a loading state if content is not available yet
+  if (!content || !content.bannerImages) {
+    return <p>Loading...</p>;
+  }
 
-    const { bannerImages } = content;
+  const { bannerImages } = content;
 
-    return (
-        <section className="flex items-center space-x-5">
-            {bannerImages.map((item: any) => (
-                <section key={item.id} className="max-w-full">
-                    <Link href={item.link} passHref>
-                        <Image
-                            src={item.url}
-                            width={160}
-                            height={50}
-                            alt={item.alt}
-                        />
-                    </Link>
-                </section>
-            ))}
+  return (
+    <section className="flex items-center space-x-5">
+      {bannerImages.map((item) => (
+        <section key={item.id} className="max-w-full">
+          <Link href={item.link || "#"} passHref>
+            <Image
+              src={item.url}
+              width={160}
+              height={50}
+              alt={item.alt || "Banner Image"}
+            />
+          </Link>
         </section>
-    )
-}
+      ))}
+    </section>
+  );
+};
 
 export default Banner;

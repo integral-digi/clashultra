@@ -57,6 +57,7 @@
         "alt": "Gallery Image 2"
       }
     ],
+
     "bannerImages": [
       {
         "id": 1,
@@ -84,6 +85,85 @@
         "url": "/assets/amazonstore.svg",
         "alt": "Gallery Image 2",
         "link": "https://amazon.com"
+      }
+    ],
+
+    "features": {
+      "label": "features",
+      "title": "Learn the ABC of Clash Ultra",
+      "card": [
+        {
+          "id": 1,
+          "title": "Attack",
+          "subtitle": "Attack neighbouring domains for prized resources and prestige.",
+          "illustration": "/images/attack.png"
+        },
+        {
+          "id": 2,
+          "title": "Build",
+          "subtitle": "Increase your status by building defense structures, resources mines and factories",
+          "illustration": "/images/build.png"
+        },
+        {
+          "id": 3,
+          "title": "Collaborate",
+          "subtitle": "Team up with other players to achieve group goals, and exchange resources.",
+          "illustration": "/images/collaborate.png"
+        }
+      ]
+    },
+
+    "subscribe": {
+      "title": "Be the first to get the latest updates from us",
+      "placeholder": "Your email address here",
+      "buttonText": "subscribe"
+    },
+
+    "cta": {
+      "title": "Join an alliance on Clash Ultra now",
+      "icon": {
+        "id": 1,
+        "url": "/assets/discord.svg",
+        "alt": "discord"
+      },
+      "buttonText": "Join on Discord",
+      "features": [
+        { "id": 1, "text": "Addictive" },
+        { "id": 2, "text": "Smooth Gameplay" },
+        { "id": 3, "text": "Vibrant Community" }
+      ]
+    },
+
+    "trailerImages": [
+      {
+        "id": 1,
+        "url": "/images/1.jpg",
+        "alt": "Gallery Image 1"
+      },
+      {
+        "id": 2,
+        "url": "/images/2.jpg",
+        "alt": "Gallery Image 1"
+      },
+      {
+        "id": 3,
+        "url": "/images/3.jpg",
+        "alt": "Gallery Image 1"
+      },
+      {
+        "id": 4,
+        "url": "/images/4.png",
+        "alt": "Gallery Image 1"
+      },
+      {
+        "id": 5,
+        "url": "/images/5.jpg",
+        "alt": "Gallery Image 1"
+      },
+      {
+        "id": 6,
+        "url": "/images/6.jpg",
+        "alt": "Gallery Image 1"
       }
     ]
   }
