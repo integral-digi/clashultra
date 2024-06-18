@@ -16,16 +16,16 @@ const Banner: React.FC = () => {
   const { bannerImages } = content;
 
   return (
-    <section className="flex items-center space-x-5">
+    <section className="flex items-center flex-wrap lg:flex-1 gap-5">
       {bannerImages.map((item) => (
         <section key={item.id} className="max-w-full">
           <Link href={item.link || "#"} passHref>
-            <Image
-              src={item.url}
-              width={160}
-              height={50}
-              alt={item.alt || "Banner Image"}
-            />
+              <Image
+                src={item.url || "/"}
+                width={160}
+                height={50}
+                alt={item.alt || "Banner Image"}
+              />
           </Link>
         </section>
       ))}

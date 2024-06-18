@@ -6,15 +6,15 @@ import Banner from './Banner';
 
 // Define reusable style classes
 const sectionStyle = "w-full flex justify-center items-center";
-export const titleStyle = "font-bold text-6xl text-center";
-export const labelStyle = "text-3xl text-stone-300 text-center capitalize line-through";
+export const titleStyle = "font-bold text-6xl text-center lg:text-3xl";
+export const labelStyle = "text-3xl text-stone-300 text-center capitalize line-through lg:text:lg";
 
 const About: React.FC = () => {
   const content = useContent();
 
   // Show a loading state if content is not available yet
   if (!content || !content.about) {
-    return <div>Loading...</div>;
+    return <section>Loading...</section>;
   }
 
   const { about } = content;
@@ -22,38 +22,38 @@ const About: React.FC = () => {
   return (
     <section className="w-full space-y-8 flex flex-col justify-center items-center">
       {/* Section for the label */}
-      <div className="flex items-center space-x-2">
-        <div className="rounded-full border-2 border-blue-950 w-4 h-4" />
+      <section className="flex items-center space-x-2">
+        <section className="rounded-full border-2 border-blue-950 w-4 h-4" />
         <h6 className={labelStyle}>
           {about.label}
         </h6>
-      </div>
+      </section>
 
       {/* Section for the title */}
-      <div className={sectionStyle}>
+      <section className={sectionStyle}>
         <h2 className={titleStyle}>
           {about.title}
         </h2>
-      </div>
+      </section>
 
       {/* Section for the subtitle */}
-      <div className={sectionStyle}>
-        <h2 className="font-normal text-xl text-white text-center">
+      <section className={sectionStyle}>
+        <h2 className="font-normal text-xl text-white text-center lg:text-base">
           {about.subtitle}
         </h2>
-      </div>
+      </section>
 
       {/* Section for the banner */}
-      <div className={sectionStyle}>
+      <section className={sectionStyle}>
         <Banner />
-      </div>
+      </section>
 
-      {/* Section for the main text */}
-      <div className={sectionStyle}>
-        <h2 className="font-normal text-xl text-white text-center w-[85%]">
+      {/* Section for the main abouttext */}
+      <section className={sectionStyle}>
+        <p className="font-normal text-xl text-white text-center w-[85%] lg:w-full">
           {about.text}
-        </h2>
-      </div>
+        </p>
+      </section>
     </section>
   );
 };

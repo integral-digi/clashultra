@@ -16,8 +16,8 @@ const CTA: React.FC = () => {
 
   return (
     <section className="w-full bg-yellow-50 relative overflow-hidden">
-      <section className="space-y-12 p-8 md:p-24 flex flex-col items-center justify-center">
-        <h2 className={`text-black w-full md:w-1/2 text-center ${titleStyle}`}>
+      <section className="space-y-12 p-36 lg:p-8 flex flex-col items-center justify-center z-20">
+        <h2 className={`text-black w-1/2 lg:w-full text-center ${titleStyle}`}>
           {cta.title}
         </h2>
         <section className="space-y-8 flex items-center justify-center flex-col">
@@ -66,14 +66,14 @@ const CTA: React.FC = () => {
         width={480}
         height={540}
         alt="abstract"
-        className="absolute left-0 -top-64"
+        className="absolute left-0 -top-64 lg:hidden"
       />
       <Image
         src="/assets/decor.svg"
         width={480}
         height={540}
         alt="abstract"
-        className="absolute right-0 -bottom-4"
+        className="absolute right-0 -bottom-4 z-0"
       />
     </section>
   );

@@ -1,170 +1,227 @@
 {
-    "logo": {
-      "url": "/images/logo.svg",
-      "alt": "Logo"
-    },
-
-    "hero": {
-      "url": "/images/hero.jpg",
-      "alt": "Hero Image"
-    },
-
-    "about": {
-      "label": "About",
-      "title": "Why Clash Ultra?",
-      "subtitle": "Learn about Clash Ultra and what makes us awesome",
-      "text": "Clash Ultra is a thrilling strategy game that takes the excitement of classic base-building and battles to new heights. In this immersive game, you will construct and upgrade your own village, train a powerful army, and lead your troops to victory against players from around the world. Engage in epic battles, form alliances, and devise strategic plans to outsmart your enemies. With stunning graphics, dynamic gameplay, and a variety of unique units and heroes, Clash Ultra offers endless hours of competitive fun. Join the clash, dominate the battlefield, and become the ultimate ruler in Clash Ultra."
-    },
-
-    "trailer": {
-        "url":"https://youtu.be/cYDm_pod2vM?si=XBLUDxEkqmsxCFrD"
-    },
-
-    "images": [
+  "logo": {
+    "url": "/assets/logo.svg",
+    "alt": "Logo"
+  },
+  "hero": {
+    "url": "/images/hero.jpg",
+    "alt": "Hero Image"
+  },
+  "about": {
+    "label": "About",
+    "title": "Why Clash Ultra?",
+    "subtitle": "Learn about Clash Ultra and what makes us awesome",
+    "text": "Clash Ultra is a thrilling strategy game that takes the excitement of classic base-building and battles to new heights. In this immersive game, you will construct and upgrade your own village, train a powerful army, and lead your troops to victory against players from around the world. Engage in epic battles, form alliances, and devise strategic plans to outsmart your enemies. With stunning graphics, dynamic gameplay, and a variety of unique units and heroes, Clash Ultra offers endless hours of competitive fun. Join the clash, dominate the battlefield, and become the ultimate ruler in Clash Ultra."
+  },
+  "trailer": {
+    "src": "https://youtu.be/cYDm_pod2vM?si=XBLUDxEkqmsxCFrD"
+  },
+  
+  "mediaMentions": {
+    "label": "Clash Ultra in the news",
+    "media": [
       {
         "id": 1,
-        "url": "/images/gallery1.jpg",
-        "alt": "Gallery Image 1"
-      },
-
-      {
-        "id": 2,
-        "url": "/images/gallery2.jpg",
-        "alt": "Gallery Image 2"
-      },
-
-      {
-        "id": 3,
-        "url": "/images/gallery2.jpg",
-        "alt": "Gallery Image 2"
-      },
-
-      {
-        "id": 4,
-        "url": "/images/gallery2.jpg",
-        "alt": "Gallery Image 2"
-      },
-
-      {
-        "id": 5,
-        "url": "/images/gallery2.jpg",
-        "alt": "Gallery Image 2"
-      },
-      
-      {
-        "id": 6,
-        "url": "/images/gallery2.jpg",
-        "alt": "Gallery Image 2"
-      }
-    ],
-
-    "bannerImages": [
-      {
-        "id": 1,
-        "url": "/assets/microsoft.svg",
+        "url": "/assets/forbes.svg",
         "alt": "Gallery Image 1",
-        "link": "https://microsoft.com"
+        "link": "https://forbes.com"
       },
-
       {
         "id": 2,
-        "url": "/assets/applestore.svg",
-        "alt": "Gallery Image 2",
-        "link": "https://apple.com"
+        "url": "/assets/verge.svg",
+        "alt": "Gallery Image 1",
+        "link": "https://theverge.com"
       },
-
       {
         "id": 3,
-        "url": "/assets/googlestore.svg",
-        "alt": "Gallery Image 3",
-        "link": "https://play.google.com"
+        "url": "/assets/nytimes.svg",
+        "alt": "Gallery Image 1",
+        "link": "https://newyorktimes.com"
       },
-
       {
         "id": 4,
-        "url": "/assets/amazonstore.svg",
-        "alt": "Gallery Image 2",
-        "link": "https://amazon.com"
+        "url": "/assets/time.svg",
+        "alt": "Gallery Image 1",
+        "link": "https://time.com"
       }
-    ],
-
-    "features": {
-      "label": "features",
-      "title": "Learn the ABC of Clash Ultra",
-      "card": [
+    ]
+  },
+  "images": [
+    {
+      "id": 1,
+      "url": "/images/gallery1.jpg",
+      "alt": "Gallery Image 1"
+    },
+    {
+      "id": 2,
+      "url": "/images/gallery2.jpg",
+      "alt": "Gallery Image 2"
+    },
+    {
+      "id": 3,
+      "url": "/images/gallery2.jpg",
+      "alt": "Gallery Image 2"
+    },
+    {
+      "id": 4,
+      "url": "/images/gallery2.jpg",
+      "alt": "Gallery Image 2"
+    },
+    {
+      "id": 5,
+      "url": "/images/gallery2.jpg",
+      "alt": "Gallery Image 2"
+    },
+    {
+      "id": 6,
+      "url": "/images/gallery2.jpg",
+      "alt": "Gallery Image 2"
+    }
+  ],
+  "bannerImages": [
+    {
+      "id": 1,
+      "url": "/assets/microsoft.svg",
+      "alt": "Gallery Image 1",
+      "link": "https://microsoft.com"
+    },
+    {
+      "id": 2,
+      "url": "/assets/applestore.svg",
+      "alt": "Gallery Image 2",
+      "link": "https://apple.com"
+    },
+    {
+      "id": 3,
+      "url": "/assets/googlestore.svg",
+      "alt": "Gallery Image 3",
+      "link": "https://play.google.com"
+    },
+    {
+      "id": 4,
+      "url": "/assets/amazonstore.svg",
+      "alt": "Gallery Image 2",
+      "link": "https://amazon.com"
+    }
+  ],
+  "features": {
+    "label": "features",
+    "title": "Learn the ABC of Clash Ultra",
+    "card": [
+      {
+        "id": 1,
+        "title": "Attack",
+        "subtitle": "Attack neighbouring domains for prized resources and prestige.",
+        "illustration": "/images/attack.png"
+      },
+      {
+        "id": 2,
+        "title": "Build",
+        "subtitle": "Increase your status by building defense structures, resources mines and factories",
+        "illustration": "/images/build.png"
+      },
+      {
+        "id": 3,
+        "title": "Collaborate",
+        "subtitle": "Team up with other players to achieve group goals, and exchange resources.",
+        "illustration": "/images/collaborate.png"
+      }
+    ]
+  },
+  "subscribe": {
+    "title": "Be the first to get the latest updates from us",
+    "placeholder": "Your email address",
+    "buttonText": "subscribe"
+  },
+  "cta": {
+    "title": "Join an alliance on Clash Ultra now",
+    "icon": {
+      "id": 1,
+      "url": "/assets/discord.svg",
+      "alt": "discord"
+    },
+    "buttonText": "Join on Discord",
+    "features": [
+      { "id": 1, "text": "Addictive" },
+      { "id": 2, "text": "Smooth Gameplay" },
+      { "id": 3, "text": "Vibrant Community" }
+    ]
+  },
+  "trailerImages": [
+    {
+      "id": 1,
+      "url": "/images/1.jpg",
+      "alt": "Gallery Image 1"
+    },
+    {
+      "id": 2,
+      "url": "/images/2.jpg",
+      "alt": "Gallery Image 1"
+    },
+    {
+      "id": 3,
+      "url": "/images/3.jpg",
+      "alt": "Gallery Image 1"
+    },
+    {
+      "id": 4,
+      "url": "/images/4.png",
+      "alt": "Gallery Image 1"
+    },
+    {
+      "id": 5,
+      "url": "/images/5.jpg",
+      "alt": "Gallery Image 1"
+    },
+    {
+      "id": 6,
+      "url": "/images/6.jpg",
+      "alt": "Gallery Image 1"
+    }
+  ],
+  "footer": {
+    "logo": {"url": "/assets/logo.svg", "alt": "Logo"},
+    "firstDiv": {
+      "title": "Support",
+      "links": [
         {
           "id": 1,
-          "title": "Attack",
-          "subtitle": "Attack neighbouring domains for prized resources and prestige.",
-          "illustration": "/images/attack.png"
+          "name": "Contact us",
+          "url": "#"
         },
         {
           "id": 2,
-          "title": "Build",
-          "subtitle": "Increase your status by building defense structures, resources mines and factories",
-          "illustration": "/images/build.png"
-        },
-        {
-          "id": 3,
-          "title": "Collaborate",
-          "subtitle": "Team up with other players to achieve group goals, and exchange resources.",
-          "illustration": "/images/collaborate.png"
+          "name": "Press Kit",
+          "url": "#"
         }
       ]
     },
-
-    "subscribe": {
-      "title": "Be the first to get the latest updates from us",
-      "placeholder": "Your email address here",
-      "buttonText": "subscribe"
-    },
-
-    "cta": {
-      "title": "Join an alliance on Clash Ultra now",
-      "icon": {
-        "id": 1,
-        "url": "/assets/discord.svg",
-        "alt": "discord"
-      },
-      "buttonText": "Join on Discord",
-      "features": [
-        { "id": 1, "text": "Addictive" },
-        { "id": 2, "text": "Smooth Gameplay" },
-        { "id": 3, "text": "Vibrant Community" }
-      ]
-    },
-
-    "trailerImages": [
+    "secondDiv": [
       {
         "id": 1,
-        "url": "/images/1.jpg",
-        "alt": "Gallery Image 1"
+        "url": "/assets/facebook.svg",
+        "alt": "facebook",
+        "link": "https://facebook.com"
       },
       {
         "id": 2,
-        "url": "/images/2.jpg",
-        "alt": "Gallery Image 1"
+        "url": "/assets/instagram.svg",
+        "alt": "instagram",
+        "link": "https://instagram.com"
       },
       {
         "id": 3,
-        "url": "/images/3.jpg",
-        "alt": "Gallery Image 1"
+        "url": "/assets/x.svg",
+        "alt": "x",
+        "link": "https://x.com"
       },
       {
         "id": 4,
-        "url": "/images/4.png",
-        "alt": "Gallery Image 1"
-      },
-      {
-        "id": 5,
-        "url": "/images/5.jpg",
-        "alt": "Gallery Image 1"
-      },
-      {
-        "id": 6,
-        "url": "/images/6.jpg",
-        "alt": "Gallery Image 1"
+        "url": "/assets/youtube.svg",
+        "alt": "youtube",
+        "link": "https://youtube.com"
       }
-    ]
+    ],
+    "copyright": "© 2024 Clash Ultra | All Rights Reserved"
   }
-  
+}

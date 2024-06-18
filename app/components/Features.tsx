@@ -14,7 +14,7 @@ const Features: React.FC = () => {
 
     return (
     <section className="w-full flex flex-col items-center justify-center py-8 space-y-20">
-        <section className="space-y-3 w-1/2 flex flex-col items-center justify-center">
+        <section className="space-y-3 w-1/2 flex flex-col items-center justify-center lg:w-full">
             <section className="flex items-center space-x-2 mb-8">
                 <section className="rounded-full border-2 border-blue-950 w-4 h-4" />
                 <h6 className={labelStyle}>
@@ -25,11 +25,11 @@ const Features: React.FC = () => {
                 {features.title}
             </h2>
         </section>
-        <section className="flex flex-wrap items-center space-x-12 gap-4 justify-center">
+        <section className="flex flex-wrap items-center gap-12 justify-center lg:flex-col">
             {features.card.map((item: any) => (
                 <section
                     key={item.id}
-                    className={`w-1/4 h-full rounded-2xl py-8 pl-8 pr-4 ${
+                    className={`w-1/4 h-full rounded-2xl py-8 pl-8 pr-4 lg:w-full ${
                     item.id === 1
                         ? "bg-yellow-50 text-black/80"
                         : item.id === 2
@@ -45,11 +45,11 @@ const Features: React.FC = () => {
                         <section className="float-right">
                             <Image
                             src={item.illustration}
-                            width={250}
-                            height={250}
-                            layout="responsive"
-                            objectFit="contain"
-                            alt={item.alt}
+                                width={250}
+                                height={250}
+                                layout="responsive"
+                                objectFit="contain"
+                                alt={item.alt}
                             />
                         </section>
                     </section>

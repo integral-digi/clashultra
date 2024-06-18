@@ -16,21 +16,22 @@ const TrailerImages: React.FC = () => {
   return (
     <section className="flex flex-wrap items-center justify-between gap-16">
       {trailerImages.map((item) => (
-        <div key={item.id} className="w-1/4 h-64 bg-clip-content rounded-xl object-cover">
+        // Container section with relative positioning for the Image component
+        <section key={item.id} className="relative w-96 h-64 rounded-xl overflow-hidden">
           {item.url ? (
             <Image
               src={item.url}
-              width={360}
-              height={256}
               alt={item.alt || "Trailer Image"}
-              style={{ objectFit: "contain" }}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-xl"
             />
           ) : (
-            <div className="bg-gray-200 w-full h-full flex items-center justify-center">
+            <section className="bg-gray-200 w-full h-full flex items-center justify-center">
               <span>Image not available</span>
-            </div>
+            </section>
           )}
-        </div>
+        </section>
       ))}
     </section>
   );
