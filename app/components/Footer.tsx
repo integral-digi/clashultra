@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
     return (    
         <motion.section 
             className="space-y-14"
-            initial={{ opacity: 0, translateY: "200px" }}
+            initial={{ opacity: 0, translateY: "100px" }}
             whileInView={{ opacity: 1, translateY: "0" }}
             transition={{ delay: 0.5, duration: 3 }}
             exit={{ opacity: 0 }}

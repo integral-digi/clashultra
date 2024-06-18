@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { useContent } from "../context/ContentContext";
 import { labelStyle, titleStyle } from "./About";
 
@@ -25,7 +26,13 @@ const Features: React.FC = () => {
                 {features.title}
             </h2>
         </section>
-        <section className="flex flex-wrap items-center gap-12 justify-center lg:flex-col">
+        <motion.section 
+            className="flex flex-wrap items-center gap-12 justify-center lg:flex-col"
+            initial={{ opacity: 0, translateY: "100px" }}
+            whileInView={{ opacity: 1, translateY: "0" }}
+            transition={{ delay: 0.5, duration: 3 }}
+            exit={{ opacity: 0 }}
+        >
             {features.card.map((item: any) => (
                 <section
                     key={item.id}
@@ -55,7 +62,7 @@ const Features: React.FC = () => {
                     </section>
                 </section>
             ))}
-        </section>
+        </motion.section>
     </section>
   );
 };
