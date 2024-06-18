@@ -12,7 +12,7 @@ import Trailer from "./components/Trailer";
 
 const Home = () => {
   return (
-    <main className="w-full bg-stone-900">
+    <main className="w-full bg-stone-900 overflow-hidden">
       <section className="pb-16 space-y-40">
         <Hero />
         <section className="px-24 w-full flex flex-col justify-center items-center space-y-40 lg:px-8">
