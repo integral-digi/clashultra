@@ -10,7 +10,7 @@ const Banner: React.FC = () => {
 
   // Show a loading state if content is not available yet
   if (!content || !content.bannerImages) {
-    return <p>Loading...</p>;
+    return <section></section>;
   }
 
   const { bannerImages } = content;

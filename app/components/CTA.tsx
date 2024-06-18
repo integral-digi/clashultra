@@ -9,7 +9,7 @@ const CTA: React.FC = () => {
   const content = useContent();
 
   if (!content || !content.cta) {
-    return <p>Loading...</p>;
+    return <section></section>;
   }
 
   const { cta } = content;

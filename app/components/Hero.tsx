@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const content = useContent();
 
   if (!content || !content.hero) {
-    return <div>Loading...</div>;
+    return <section></section>;
   }
 
   const { hero } = content;
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
     <section className="w-full">
       <section className="relative w-full h-[800px]">
         <Image
-          src={hero.url}
+          src={hero.url || "/"}
           alt={hero.alt || "Hero Image"}
           layout="fill"
           objectFit="cover"

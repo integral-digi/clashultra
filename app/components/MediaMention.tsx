@@ -10,7 +10,7 @@ const MediaMentions: React.FC = () => {
 
   // Show a loading state if content is not available yet
   if (!content || !content.mediaMentions) {
-    return <p>Loading...</p>;
+    return <section></section>;
   }
 
   const { mediaMentions } = content;

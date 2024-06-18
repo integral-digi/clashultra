@@ -7,7 +7,7 @@ const Features: React.FC = () => {
     const content = useContent();
 
     if (!content || !content.features) {
-        return <p>Loading...</p>;
+        return <section></section>;
     }
 
     const { features } = content;

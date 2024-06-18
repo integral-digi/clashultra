@@ -9,7 +9,7 @@ const Subscribe: React.FC = () => {
 
   // Show a loading state if content is not available yet
   if (!content) {
-    return <div>Loading...</div>;
+    return <section></section>;
   }
 
   const { subscribe } = content;
