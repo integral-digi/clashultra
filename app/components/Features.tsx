@@ -38,10 +38,10 @@ const Features: React.FC = () => {
                     key={item.id}
                     className={`w-1/4 h-full rounded-2xl py-8 pl-8 pr-4 lg:w-full ${
                     item.id === 1
-                        ? "bg-yellow-50 text-black/80"
+                        ? `${item.textColor} font-medium ${item.backgroundColor}`
                         : item.id === 2
-                        ? "bg-blue-950 text-white"
-                        : "bg-blue-50 text-black/80"
+                        ? `${item.textColor} font-medium ${item.backgroundColor}`
+                        : `${item.textColor} font-medium ${item.backgroundColor}`
                     }`}
                 >
                     <section className="space-y-8">

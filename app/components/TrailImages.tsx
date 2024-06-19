@@ -1,10 +1,14 @@
 "use client"
 import Image from "next/image";
+import { useState } from "react";
 import { useContent } from "../context/ContentContext";
+import Lightbox from "./Lightbox"; // Adjust the import path as necessary
 
 // TrailerImages component to render images accompanying the trailer
 const TrailerImages: React.FC = () => {
   const content = useContent();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentMedia, setCurrentMedia] = useState<string>("");
 
   // Show a loading state if content is not available yet
   if (!content || !content.trailerImages) {
@@ -13,11 +17,20 @@ const TrailerImages: React.FC = () => {
 
   const { trailerImages } = content;
 
+  const openLightbox = (media: string) => {
+    setCurrentMedia(media);
+    setLightboxOpen(true);
+  };
+
   return (
     <section className="flex flex-wrap items-center justify-between gap-16">
       {trailerImages.map((item) => (
         // Container section with relative positioning for the Image component
-        <section key={item.id} className="relative w-96 h-64 rounded-xl overflow-hidden">
+        <section 
+          key={item.id} 
+          className="relative w-96 h-64 rounded-xl overflow-hidden cursor-pointer"
+          onClick={() => openLightbox(item.url || "/")}
+        >
           {item.url ? (
             <Image
               src={item.url}
@@ -33,6 +46,7 @@ const TrailerImages: React.FC = () => {
           )}
         </section>
       ))}
+      <Lightbox media={currentMedia} isOpen={lightboxOpen} setIsOpen={setLightboxOpen} />
     </section>
   );
 };

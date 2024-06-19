@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="w-full">
-      <section className="relative w-full h-[800px]">
+      <section className="relative w-full h-[640px]">
         <Image
           src={hero.url || "/"}
           alt={hero.alt || "Hero Image"}

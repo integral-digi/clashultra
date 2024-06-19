@@ -1,7 +1,9 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Define custom CSS variables */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,20 +18,22 @@
   }
 }
 
+/* Apply global styles */
 body {
   color: rgb(var(--foreground-rgb));
-  background: #2A1013;
+  background-color: #2A1013; /* Custom dark background color */
 }
 
 html {
-  font-family: var(--font-rubik);
+  font-family: var(--font-rubik); /* Custom font family */
 }
- 
+
 h6 {
-  font-family: var(--font-caveat);
+  font-family: var(--font-caveat); /* Custom font family for h6 */
 }
 
 @layer utilities {
+  /* Define custom utility classes */
   .text-balance {
     text-wrap: balance;
   }

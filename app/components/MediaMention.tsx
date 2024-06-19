@@ -26,19 +26,21 @@ const MediaMentions: React.FC = () => {
       </section>
       
       {/* Media Mentions Section */}
-      <section className="flex flex-wrap items-center gap-20 justify-between">
-        {mediaMentions.media.map((item) => (
-          <section key={item.id} className="max-w-full max-h-auto lg:max-h-4 lg:max-w-auto">
-            <Link href={item.link || "#"} passHref>
-              <Image
-                src={item.url || "/"}
-                width={160}
-                height={36}
-                alt={item.alt || "Mention"}
-              />
-            </Link>
-          </section>
-        ))}
+      <section className="flex items-center justify-center">
+        <section className="flex items-center justify-between gap-32 lg:gap-8">
+          {mediaMentions.media.map((item) => (
+            <section key={item.id} className="w-auto h-9 lg:max-h-4 lg:max-w-auto">
+              <Link href={item.link || "#"} passHref>
+                <Image
+                  src={item.url || "/"}
+                  width={160}
+                  height={36}
+                  alt={item.alt || "Mention"}
+                />
+              </Link>
+            </section>
+          ))}
+        </section>
       </section>
     </section>
   );

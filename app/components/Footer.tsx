@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             className="space-y-14"
             initial={{ opacity: 0, translateY: "100px" }}
             whileInView={{ opacity: 1, translateY: "0" }}
-            transition={{ delay: 0.5, duration: 3 }}
+            transition={{ delay: 0.5, duration: 2 }}
             exit={{ opacity: 0 }}
         >
             <section className="flex items-start space-x-32 px-24 lg:flex-col lg:space-y-16 lg:px-8 lg:space-x-0">

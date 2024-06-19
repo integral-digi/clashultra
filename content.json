@@ -1,4 +1,8 @@
 {
+  "color": {
+    "backgroundColor": "bg-stone-900",
+    "textColor": "text-white"
+  },
   "logo": {
     "url": "/assets/logo.svg",
     "alt": "Logo"
@@ -14,7 +18,12 @@
     "text": "Clash Ultra is a thrilling strategy game that takes the excitement of classic base-building and battles to new heights. In this immersive game, you will construct and upgrade your own village, train a powerful army, and lead your troops to victory against players from around the world. Engage in epic battles, form alliances, and devise strategic plans to outsmart your enemies. With stunning graphics, dynamic gameplay, and a variety of unique units and heroes, Clash Ultra offers endless hours of competitive fun. Join the clash, dominate the battlefield, and become the ultimate ruler in Clash Ultra."
   },
   "trailer": {
-    "src": "https://youtu.be/cYDm_pod2vM?si=XBLUDxEkqmsxCFrD"
+    "video": {
+      "src": "https://youtu.be/cYDm_pod2vM?si=XBLUDxEkqmsxCFrD"
+    },
+    "image": {
+      "url": "/images/hero3.jpg"
+    }
   },
   
   "mediaMentions": {
@@ -112,26 +121,34 @@
         "id": 1,
         "title": "Attack",
         "subtitle": "Attack neighbouring domains for prized resources and prestige.",
-        "illustration": "/images/attack.png"
+        "illustration": "/images/attack.png",
+        "backgroundColor": "bg-yellow-50",
+        "textColor": "text-black/20"
       },
       {
         "id": 2,
         "title": "Build",
         "subtitle": "Increase your status by building defense structures, resources mines and factories",
-        "illustration": "/images/build.png"
+        "illustration": "/images/build.png",
+        "backgroundColor": "bg-blue-950",
+        "textColor": "text-white"
       },
       {
         "id": 3,
         "title": "Collaborate",
         "subtitle": "Team up with other players to achieve group goals, and exchange resources.",
-        "illustration": "/images/collaborate.png"
+        "illustration": "/images/collaborate.png",
+        "backgroundColor": "bg-blue-50",
+        "textColor": "text-black/20"
       }
     ]
   },
   "subscribe": {
     "title": "Be the first to get the latest updates from us",
     "placeholder": "Your email address",
-    "buttonText": "subscribe"
+    "buttonText": "subscribe",
+    "apiKey": "your-api-key-here",
+    "apiUrl": "https://your-email-newsletter-provider.com/api/subscribe"
   },
   "cta": {
     "title": "Join an alliance on Clash Ultra now",
