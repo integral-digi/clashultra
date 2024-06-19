@@ -23,7 +23,7 @@ const Banner: React.FC = () => {
               <Image
                 src={item.url || "/"}
                 width={160}
-                height={50}
+                height={48}
                 alt={item.alt || "Banner Image"}
               />
           </Link>

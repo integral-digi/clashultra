@@ -27,7 +27,7 @@ const MediaMentions: React.FC = () => {
       
       {/* Media Mentions Section */}
       <section className="flex items-center justify-center">
-        <section className="flex items-center justify-between gap-32 lg:gap-8">
+        <section className="flex items-center justify-between gap-24 lg:gap-8">
           {mediaMentions.media.map((item) => (
             <section key={item.id} className="w-auto h-9 lg:max-h-4 lg:max-w-auto">
               <Link href={item.link || "#"} passHref>

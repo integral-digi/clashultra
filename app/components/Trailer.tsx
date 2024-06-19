@@ -29,7 +29,7 @@ const Trailer: React.FC = () => {
   return (
     <section className="w-full">
       {/* Container for the video or YouTube iframe element */}
-      <section className="w-full h-[640px] rounded-xl relative">
+      <section className="w-[80%] h-[540px] rounded-xl mx-auto xl:w-full">
         {showVideo ? (
           isYouTubeUrl(trailer.video.src) ? (
             <iframe
@@ -50,7 +50,7 @@ const Trailer: React.FC = () => {
           <section className="w-full h-full relative backdrop-filter bg-blend-overlay">
             <img
               src={trailer.image.url}
-              alt="Trailer Placeholder"
+              alt={trailer.image.alt}
               className="w-full h-full object-cover rounded-xl cursor-pointer"
               onClick={toggleVideo}
             />

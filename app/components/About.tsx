@@ -21,13 +21,6 @@ const About: React.FC = () => {
 
   return (
     <section className="w-full space-y-8 flex flex-col justify-center items-center">
-      {/* Section for the label */}
-      <section className="flex items-center space-x-2">
-        <section className="rounded-full border-2 border-blue-950 w-4 h-4" />
-        <h6 className={labelStyle}>
-          {about.label}
-        </h6>
-      </section>
 
       {/* Section for the title */}
       <section className={sectionStyle}>

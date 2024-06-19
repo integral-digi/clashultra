@@ -3,6 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useContent } from "../context/ContentContext";
 import Image from "next/image";
+import Banner from "./Banner";
 
 // Footer component to render the footer section of the application
 const Footer: React.FC = () => {
@@ -23,7 +24,7 @@ const Footer: React.FC = () => {
             transition={{ delay: 0.5, duration: 2 }}
             exit={{ opacity: 0 }}
         >
-            <section className="flex items-start space-x-32 px-24 lg:flex-col lg:space-y-16 lg:px-8 lg:space-x-0">
+            <section className="flex items-start space-x-32 lg:flex-col lg:space-y-16 lg:space-x-0">
                 {/* Logo section */}
                 <section className="w-56 h-16 lg:h-8 lg:w-auto">
                     <Image 
@@ -68,6 +69,10 @@ const Footer: React.FC = () => {
                         </section>
                     </section>
                 </section>
+            </section>
+
+            <section className="flex items-center justify-center">
+                <Banner />
             </section>
 
             {/* Horizontal rule and copyright text */}

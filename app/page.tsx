@@ -25,21 +25,21 @@ const Home = () => {
     <main className={`w-full overflow-hidden ${color.backgroundColor}`}>
       <section className="pb-16 space-y-40">
         <Hero />
-        <section className="px-24 w-full flex flex-col justify-center items-center space-y-40 lg:px-8">
+        <section className="px-36 w-full flex flex-col justify-center items-center space-y-40 lg:px-8">
           <Banner />
-          <MediaMentions />
-          <section className="space-y-16">
+          
+          <section className="space-y-16 flex flex-col justify-center items-center">
             <Trailer />
             <TrailerImages />
           </section>
           <About />
           <Features />
           <Subscribe />
+          <MediaMentions />
+          <section className="py-16">
+            <Footer />
+          </section>
         </section>
-        <CTA />
-      </section>
-      <section className="pb-16">
-        <Footer />
       </section>
     </main>
   )
