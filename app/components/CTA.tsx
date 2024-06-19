@@ -1,3 +1,4 @@
+//removed
 "use client"
 import Image from "next/image";
 import { useContent } from "../context/ContentContext";
