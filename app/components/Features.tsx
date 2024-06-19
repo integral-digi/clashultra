@@ -30,11 +30,11 @@ const Features: React.FC = () => {
             className="flex flex-wrap items-center gap-12 justify-center lg:flex-col"
             initial={{ opacity: 0, translateY: "100px" }}
             whileInView={{ opacity: 1, translateY: "0" }}
-            transition={{ delay: 0.5, duration: 3 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             exit={{ opacity: 0 }}
         >
             {features.card.map((item: any) => (
-                <section
+                <motion.section
                     key={item.id}
                     className={`w-1/4 h-full rounded-2xl py-8 pl-8 pr-4 lg:w-full ${
                     item.id === 1
@@ -43,6 +43,7 @@ const Features: React.FC = () => {
                         ? `${item.textColor} font-medium ${item.backgroundColor}`
                         : `${item.textColor} font-medium ${item.backgroundColor}`
                     }`}
+                    whileHover={{ scale: 1.05 }}
                 >
                     <section className="space-y-8">
                         <section className="space-y-2 w-full">
@@ -51,7 +52,7 @@ const Features: React.FC = () => {
                         </section>
                         <section className="float-right">
                             <Image
-                            src={item.illustration}
+                                src={item.illustration}
                                 width={250}
                                 height={250}
                                 layout="responsive"
@@ -60,7 +61,7 @@ const Features: React.FC = () => {
                             />
                         </section>
                     </section>
-                </section>
+                </motion.section>
             ))}
         </motion.section>
     </section>
