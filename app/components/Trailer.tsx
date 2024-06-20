@@ -29,7 +29,7 @@ const Trailer: React.FC = () => {
   return (
     <section className="w-full">
       {/* Container for the video or YouTube iframe element */}
-      <section className="w-full h-[540px] rounded-xl mx-auto xl:w-full">
+      <section className="w-[94%] h-[540px] rounded-xl mx-auto xl:w-full">
         {showVideo ? (
           isYouTubeUrl(trailer.video.src) ? (
             <iframe

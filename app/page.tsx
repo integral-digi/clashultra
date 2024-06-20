@@ -24,9 +24,9 @@ const Home = () => {
     <main className={`w-full overflow-hidden ${color.backgroundColor}`}>
       <section className="pb-16 space-y-40">
         <Hero />
-        <section className="px-40 w-full flex flex-col justify-center items-center space-y-40 lg:px-10">
+        <section className="px-[16%] w-full flex flex-col justify-center items-center space-y-40 lg:px-10">
           <Banner />
-          <section className="space-y-16 flex flex-col justify-center items-center">
+          <section className="space-y-12 flex flex-col justify-center items-center">
             <Trailer />
             <TrailerImages />
           </section>

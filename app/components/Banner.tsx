@@ -16,9 +16,9 @@ const Banner: React.FC = () => {
   const { bannerImages } = content;
 
   return (
-    <section className="flex items-center justify-center flex-wrap gap-5 w-full">
+    <section className="flex items-center justify-center flex-wrap gap-5 flex-1 w-full">
       {bannerImages.map((item) => (
-        <section key={item.id} className="max-w-full lg:w-[40%]">
+        <section key={item.id} className="max-w-fit lg:w-[40%]">
           <Link href={item.link || "#"} passHref>
               <Image
                 src={item.url || "/"}

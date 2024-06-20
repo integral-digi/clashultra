@@ -30,7 +30,7 @@ const Features: React.FC = () => {
             {features.card.map((item: any) => (
                 <motion.section
                     key={item.id}
-                    className={`w-[30%] h-96 rounded-2xl py-8 pl-8 pr-4 lg:w-full xl:w-full ${
+                    className={`w-[30%] min-h-96 rounded-2xl py-8 pl-8 pr-4 lg:w-full xl:w-full ${
                     item.id === 1
                         ? `${item.textColor} font-medium ${item.backgroundColor}`
                         : item.id === 2
