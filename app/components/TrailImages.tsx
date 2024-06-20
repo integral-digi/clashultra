@@ -12,7 +12,7 @@ const TrailerImages: React.FC = () => {
 
   // Show a loading state if content is not available yet
   if (!content || !content.trailerImages) {
-    return <section></section>;
+    return <section />;
   }
 
   const { trailerImages } = content;

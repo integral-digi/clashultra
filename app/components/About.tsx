@@ -14,7 +14,7 @@ const About: React.FC = () => {
 
   // Show a loading state if content is not available yet
   if (!content || !content.about) {
-    return <section></section>;
+    return <section />;
   }
 
   const { about } = content;

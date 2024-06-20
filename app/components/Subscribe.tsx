@@ -11,7 +11,7 @@ const Subscribe: React.FC = () => {
 
   // Show a loading state if content is not available yet
   if (!content) {
-    return <section>Loading...</section>;
+    return <section />;
   }
 
   const { subscribe } = content;

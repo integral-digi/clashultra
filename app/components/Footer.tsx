@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
 
     // Show a loading state if content is not available yet
     if (!content || !content.footer) {
-        return <section></section>;
+        return <section />;
     }
 
     const { footer } = content;

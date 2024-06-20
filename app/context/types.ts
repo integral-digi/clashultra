@@ -32,7 +32,7 @@ export interface Image {
   }
   
   export interface Content {
-    color?: { backgroundColor: string, textColor: string },
+    color?: { backgroundColor: string, textColor: string };
     logo: Image;
     hero?: Image;
     mediaMentions?: { label: string, media: Image[] };

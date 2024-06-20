@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { useContent } from "../context/ContentContext";
 
 interface LightboxProps {
   media: string;
@@ -28,6 +29,14 @@ const Lightbox = ({ media, isOpen, setIsOpen }: LightboxProps) => {
     }
   }, [isOpen, setIsOpen]);
 
+  const content = useContent();
+
+  if(!content || !content?.color) {
+    return <section />
+  }
+
+  const { color } = content;
+
   return (
     <section className={`w-full flex items-center justify-center  lg:w-screen h-screen lg:left-0 bg-zinc-800 ${isOpen ? 'block' : 'hidden'}`}>
       {isOpen && (
@@ -42,7 +51,7 @@ const Lightbox = ({ media, isOpen, setIsOpen }: LightboxProps) => {
                 className="rounded-xl"
                 ref={mediaRef as React.RefObject<HTMLImageElement>}
               />
-            <button onClick={closeLightbox} className="absolute top-0 right-0 m-4 bg-purple-800 text-white px-4 py-2 rounded-md font-medium">
+            <button onClick={closeLightbox} className={`${color?.textColor} absolute top-0 right-0 m-4  px-4 py-2 rounded-md font-medium ${color?.backgroundColor}`}>
               Close
             </button>
           </section>

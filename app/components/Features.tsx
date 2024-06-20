@@ -8,7 +8,7 @@ const Features: React.FC = () => {
     const content = useContent();
 
     if (!content || !content.features) {
-        return <section></section>;
+        return <section />;
     }
 
     const { features } = content;
