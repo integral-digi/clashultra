@@ -1,7 +1,6 @@
-//this component renders the hero image
-
 "use client"
 import { useContent } from '../context/ContentContext';
+import { motion } from 'framer-motion';
 import Banner from './Banner';
 
 // Define reusable style classes
@@ -41,15 +40,19 @@ const About: React.FC = () => {
         <Banner />
       </section>
 
-      {/* Section for the main abouttext */}
-      <section className={sectionStyle}>
-        <p className="font-normal text-xl text-white text-center w-[85%] lg:w-full">
+      {/* Section for the main about text with fade-in effect */}
+      <motion.section
+        className={sectionStyle}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 5 }} 
+      >
+        <p className="font-normal text-xl text-white text-center w-[85%] lg:w-full lg:text-lg">
           {about.text}
         </p>
-      </section>
+      </motion.section>
     </section>
   );
 };
 
 export default About;
-

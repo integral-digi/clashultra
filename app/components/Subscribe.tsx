@@ -55,7 +55,7 @@ const Subscribe: React.FC = () => {
   };
 
   return (
-    <section className="space-y-20 w-3/4 mx-auto lg:w-full">
+    <section className="space-y-20 w-full mx-auto lg:w-full">
       {/* Section for the subscription title */}
       <section className="w-full flex items-center justify-center">
         <h2 className={`w-full lg:w-full text-center ${titleStyle}`}>

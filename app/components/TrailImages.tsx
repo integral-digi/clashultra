@@ -23,12 +23,12 @@ const TrailerImages: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-wrap items-center justify-center gap-12">
+    <section className="flex flex-wrap items-center justify-center gap-12 w-full flex-grow">
       {trailerImages.map((item) => (
         // Container section with relative positioning for the Image component
         <section 
           key={item.id} 
-          className="relative w-72 h-48 rounded-xl overflow-hidden cursor-pointer lg:w-full"
+          className="relative w-72 h-48 rounded-xl overflow-hidden cursor-pointer md:w-full"
           onClick={() => openLightbox(item.url || "/")}
         >
           {item.url ? (

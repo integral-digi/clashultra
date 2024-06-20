@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { useContent } from "../context/ContentContext";
 import Link from "next/link";
@@ -16,7 +16,7 @@ const MediaMentions: React.FC = () => {
   const { mediaMentions } = content;
 
   return (
-    <section className="space-y-9 flex flex-col justify-center items-center">
+    <section className="space-y-9 flex flex-col justify-center items-center w-full">
       {/* Label Section */}
       <section className="flex items-center space-x-2 mb-8">
         <section className="rounded-full border-2 border-blue-950 w-4 h-4" />
@@ -27,16 +27,17 @@ const MediaMentions: React.FC = () => {
       
       {/* Media Mentions Section */}
       <section className="flex items-center justify-center">
-        <section className="flex items-center justify-between gap-24 lg:gap-8">
+        <section className="flex flex-wrap flex-1 items-center gap-24 lg:gap-16 justify-between">
           {mediaMentions.media.map((item) => (
-            <section key={item.id} className="w-auto h-9 lg:max-h-4 lg:max-w-auto">
+            <section key={item.id} className="w-1/4 lg:w-fit">
               <Link href={item.link || "#"} passHref>
-                <Image
-                  src={item.url || "/"}
-                  width={160}
-                  height={36}
-                  alt={item.alt || "Mention"}
-                />
+                <section className="relative h-full w-auto">
+                  <img
+                    src={item.url || "/"}
+                    alt={item.alt || "Mention"}
+                    className="h-9 w-auto lg:h-6"
+                  />
+                </section>
               </Link>
             </section>
           ))}

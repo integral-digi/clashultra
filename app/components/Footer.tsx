@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
 
     return (    
         <motion.section 
-            className="space-y-14"
+            className="space-y-14 w-full"
             initial={{ opacity: 0, translateY: "100px" }}
             whileInView={{ opacity: 1, translateY: "0" }}
             transition={{ delay: 0.5, duration: 2 }}
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                 </section>
 
                 {/* Links and Social Media section */}
-                <section className="space-x-24 flex items-start lg:flex-col lg:space-x-0 lg:space-y-16">
+                <section className="space-x-40 flex items-start lg:flex-col lg:space-x-0 lg:space-y-16">
                     <section className="space-y-6">
                         <h4 className="font-medium text-lg text-white">
                             {footer.firstDiv.title}
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                         <section className="space-y-4">
                             {footer.firstDiv.links.map((link) => (
                                 <Link key={link.id} href={link.url} passHref>
-                                    <p className="text-sm font-medium pb-4">
+                                    <p className="text-sm font-medium pb-4 text-nowrap">
                                         {link.name}
                                     </p>
                                 </Link>

@@ -38,55 +38,35 @@
       {
         "id": 2,
         "url": "/assets/verge.svg",
-        "alt": "Gallery Image 1",
+        "alt": "Gallery Image 2",
         "link": "https://theverge.com"
       },
       {
         "id": 3,
         "url": "/assets/nytimes.svg",
-        "alt": "Gallery Image 1",
+        "alt": "Gallery Image 3",
         "link": "https://newyorktimes.com"
       },
       {
         "id": 4,
         "url": "/assets/time.svg",
-        "alt": "Gallery Image 1",
+        "alt": "Gallery Image 4",
         "link": "https://time.com"
+      },
+      {
+        "id": 5,
+        "url": "/assets/techcrunch.svg",
+        "alt": "Gallery Image 5",
+        "link": "https://techcrunch.com"
+      },
+      {
+        "id": 6,
+        "url": "/assets/mashable.svg",
+        "alt": "Gallery Image 6",
+        "link": "https://mashable.com"
       }
     ]
   },
-  "images": [
-    {
-      "id": 1,
-      "url": "/images/gallery1.jpg",
-      "alt": "Gallery Image 1"
-    },
-    {
-      "id": 2,
-      "url": "/images/gallery2.jpg",
-      "alt": "Gallery Image 2"
-    },
-    {
-      "id": 3,
-      "url": "/images/gallery2.jpg",
-      "alt": "Gallery Image 2"
-    },
-    {
-      "id": 4,
-      "url": "/images/gallery2.jpg",
-      "alt": "Gallery Image 2"
-    },
-    {
-      "id": 5,
-      "url": "/images/gallery2.jpg",
-      "alt": "Gallery Image 2"
-    },
-    {
-      "id": 6,
-      "url": "/images/gallery2.jpg",
-      "alt": "Gallery Image 2"
-    }
-  ],
   "bannerImages": [
     {
       "id": 1,
