@@ -30,7 +30,7 @@ const MediaMentions: React.FC = () => {
         <section className="flex flex-wrap flex-1 items-center gap-24 lg:gap-16 justify-between">
           {mediaMentions.media.map((item) => (
             <section key={item.id} className="w-1/4 lg:w-fit">
-              <Link href={item.link || "#"} passHref>
+              <Link href={item.link || "#"} passHref target="blank">
                 <section className="relative h-full w-auto">
                   <img
                     src={item.url || "/"}

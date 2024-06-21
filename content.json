@@ -1,6 +1,6 @@
 {
   "color": {
-    "backgroundColor": "bg-stone-900",
+    "backgroundColor": "#2A1013",
     "textColor": "text-white"
   },
   "logo": {
@@ -45,7 +45,7 @@
         "id": 3,
         "url": "/assets/nytimes.svg",
         "alt": "Gallery Image 3",
-        "link": "https://newyorktimes.com"
+        "link": "https://nytimes.com"
       },
       {
         "id": 4,

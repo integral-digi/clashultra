@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const content = useContent();
 
   if (!content || !content.hero) {
-    return <section />;
+    return <section className="font-bold">Loading...</section>;
   }
 
   const { hero } = content;

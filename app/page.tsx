@@ -15,13 +15,15 @@ const Home = () => {
   const content = useContent();
 
   if(!content || !content.color) {
-    return <section></section>
+    return <section />
   }
 
   const { color } = content;
 
+  const bgColor = color.backgroundColor;
+
   return (
-    <main className={`w-full overflow-hidden ${color.backgroundColor}`}>
+    <main style={{ backgroundColor: bgColor }} className="w-full overflow-hidden">
       <section className="pb-16 space-y-40">
         <Hero />
         <section className="px-[16%] w-full flex flex-col justify-center items-center space-y-40 lg:px-10">
@@ -32,9 +34,9 @@ const Home = () => {
           </section>
           <About />
           <Features />
-          <Subscribe />
           <MediaMentions />
-          <section className="py-16">
+          <Subscribe />
+          <section className="pb-16">
             <Footer />
           </section>
         </section>
